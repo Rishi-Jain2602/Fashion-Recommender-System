@@ -11,3 +11,9 @@ The Fashion Recommender System project is a web-based application designed to as
 
 ***
 
+## Installation
+1. Clone the Repository
+``` bash
+git clone https://github.com/Rishi-Jain2602/Fashion-Recommender-System.git
+```
+2. 
