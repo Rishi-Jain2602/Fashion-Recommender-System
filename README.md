@@ -2,6 +2,12 @@
 ## Introduction
 The Fashion Recommender System project is a web-based application designed to assist users in discovering and exploring fashionable clothing items based on their preferences, style, and historical choices.
 
+
+
+https://github.com/Rishi-Jain2602/Fashion-Recommender-System/assets/118871883/8e6fa5ed-95f6-4e50-ac41-df03017005b8
+
+
+
 ***
 
 ## Requirements
@@ -83,7 +89,7 @@ where non-trainable parameter means already trained parameters
 ## Note
 1. Make sure you have Python 3.x installed
 2. It is recommended to use a virtual environment to avoid conflict with other projects.
-3. For deep learning, a laptop with a powerful GPU, a high-performance CPU, at least 16GB of RAM, a fast SSD, and an efficient cooling system is recommended.
+3. For deep learning, a laptop with a powerful GPU, a high-performance CPU, at least 8GB of RAM, a fast SSD, and an efficient cooling system is recommended.
 4. If you encounter any issue during installation or usage please contact rishijainai262003@gmail.com or rj1016743@gmail.com
  
 
