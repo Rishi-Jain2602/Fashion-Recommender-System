@@ -1,0 +1,8 @@
+sklearn
+numpy 
+tensorflow
+pickle 
+streamlit
+PIL
+os
+cv2(opencv-python)
