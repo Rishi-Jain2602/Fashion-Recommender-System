@@ -37,6 +37,47 @@ streamlit run main.py
 This will open the website and where we can upload the sample images from that we will get 5 similar images automatically.
 
 ***Note :-*** Keep image ,sample and upload folder in same folder only which also contains:main.py , app.py files also.
+***
+## Model Training
+
+### Knowlege Required
+- Convolutional neural network (CNN) - ResNet
+- Transfer Learning
+- Python Libraries -  Numpy, sklearn, tensorflow , pickle , streamlit, PIL, os, cv2(openCV)
+
+### Tools
+- Vs code
+
+### Importing Model using ResNet
+![model](https://github.com/Rishi-Jain2602/Fashion-Recommender-System/assets/118871883/7d263d3f-de58-4187-9287-a5a3560acd74)
+
+- Import ResNet it is an CNN Model which is already trained on various database. We can use this as Features Extractor.
+- Here top layer is removed and we have used **GlobalMaxPooling2D** in top layer which is specifically designed to reduce the spatial dimensions (height and width) of the input feature map while retaining the most important information.
+- In CNN , the initial layers learn low-level features, such as edges and textures, while deeper layers learn more complex and abstract features.
+  
+**Model Summary**
+
+  ![Screenshot (4456)](https://github.com/Rishi-Jain2602/Fashion-Recommender-System/assets/118871883/deee69cc-42ec-413b-84c0-864ef004447d)
+
+where non-trainable parameter means already trained parameters
+
+### Extractng Features
+
+![Extracting features](https://github.com/Rishi-Jain2602/Fashion-Recommender-System/assets/118871883/6caa31bc-123a-4177-92bb-31d8a7cd38cf)
+
+- We will provide the image data base to resnet which will provide 2048 features of the images.
+- In the begining it will convert images to array.
+- Then we will expand the array because here keras work on bundles of images so we just expand the dimension
+- Then the Preprocess_input will convert the features into proper format.It's shape will 1,2048
+- At last we will flatten that array to 2048 features and then normalize it.
+
+### Exporting Features
+
+![dumping](https://github.com/Rishi-Jain2602/Fashion-Recommender-System/assets/118871883/7caa01c9-7530-4ebb-a2e1-2c4f384ea447)
+
+- Here variable are filenames( Which stores the path of the images) and features list(It stores the extracted features of images) are been used to create pickle files.
+- In the pickle files all the features are exported and can be used in other files.
+
 
 ***
 ## Note
